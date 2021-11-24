@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0"
+            prefWidth="1050.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="WeerApp.GUIWeer">
+
+   <Pane layoutX="5.0" layoutY="561.0" prefHeight="106.0" prefWidth="1041.0">
+      <JFXTextField id="txtVeld" fx:id="Plaatsnaam" alignment="CENTER" focusColor="white" layoutX="426.0"
+                    layoutY="14.0" promptText="Plaatsnaam" style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;"
+                    unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="Verander" layoutX="481.0" layoutY="55.0" onAction="#handleButtonClicks" text="Verander"/>
+      <JFXButton fx:id="Kies" layoutX="406.0" layoutY="55.0" onAction="#handleButtonClicks" text="Kies"/>
+      <JFXButton fx:id="Annuleer" layoutX="575.0" layoutY="55.0" onAction="#handleButtonClicks" text="Annuleer"/>
+   </Pane>
+   <Pane fx:id="beeld1" layoutX="5.0" layoutY="7.0" prefHeight="554.0" prefWidth="1041.0">
+      <Label fx:id="plaatsnaam" alignment="CENTER" layoutX="254.0" layoutY="14.0" prefHeight="58.0" prefWidth="533.0"
+             text="PLAATSNAAM" textFill="white">
+         <font>
+            <Font name="System Bold" size="40.0"/>
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="127.0" prefHeight="40.0"
+             prefWidth="183.0" text="HUIDIG WEER" textAlignment="CENTER" textFill="black">
+         <font>
+            <Font name="System Bold" size="20.0"/>
+         </font>
+      </Label>
+      <Label fx:id="temperatuur" alignment="CENTER" layoutX="192.0" layoutY="448.0" prefHeight="58.0"
+             prefWidth="123.0" text="60" textFill="white">
+         <font>
+            <Font name="System Bold" size="40.0"/>
+         </font>
+      </Label>
+      <ImageView fx:id="afbeelding" fitHeight="200.0" fitWidth="200.0" layoutX="154.0" layoutY="224.0"
+                 pickOnBounds="true" preserveRatio="true"/>
+      <Label fx:id="dag" alignment="CENTER" layoutX="169.0" layoutY="176.0" prefHeight="40.0" prefWidth="168.0"
+             text="DAG" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label fx:id="omschrijving" alignment="CENTER" layoutX="136.0" layoutY="507.0" prefHeight="40.0"
+             prefWidth="234.0" text="Omschrijving" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="210.0" prefHeight="31.0" prefWidth="208.0" text="WINDSNELHEID :"
+             textFill="black">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="287.0" prefHeight="31.0" prefWidth="208.0" text="BEWOLKINGSGRAAD :"
+             textFill="black">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="364.0" prefHeight="31.0" prefWidth="208.0" text="LUCHTDRUK:"
+             textFill="black">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="446.0" prefHeight="31.0" prefWidth="208.0" text="LUCHTVOCHTIGHEID:"
+             textFill="black">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="614.0" layoutY="127.0" prefHeight="40.0"
+             prefWidth="256.0" text="EXTRA INFORMATIE" textAlignment="CENTER" textFill="black">
+         <font>
+            <Font name="System Bold" size="20.0"/>
+         </font>
+      </Label>
+      <Label fx:id="waarschuwing" alignment="CENTER" layoutX="329.0" layoutY="72.0" prefHeight="40.0"
+             prefWidth="383.0" text="PROBLEEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <JFXTextField id="txtVeld" fx:id="onzichtbaar" alignment="CENTER" editable="false" focusColor="#7affc300"
+                    labelFloat="true" layoutX="832.0" layoutY="54.0"
+                    style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;" unFocusColor="#ffffff00">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </JFXTextField>
+      <Label fx:id="windSnelheid" alignment="CENTER" layoutX="794.0" layoutY="210.0" prefHeight="31.0"
+             prefWidth="98.0" text="m/s" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label fx:id="bewolkingsgraad" alignment="CENTER" layoutX="794.0" layoutY="287.0" prefHeight="31.0"
+             prefWidth="98.0" text="\%" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label fx:id="luchtdruk" alignment="CENTER" layoutX="794.0" layoutY="364.0" prefHeight="31.0" prefWidth="98.0"
+             text="hpa" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Label fx:id="luchtvochtigheid" alignment="CENTER" layoutX="794.0" layoutY="446.0" prefHeight="31.0"
+             prefWidth="98.0" text="\%" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+   </Pane>
+</AnchorPane>

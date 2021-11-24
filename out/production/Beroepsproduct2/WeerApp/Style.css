@@ -1,0 +1,31 @@
+.root {
+    -fx-background-color: #79B9EB;
+}
+
+#Verander {
+    -fx-background-color: #FFC239;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+}
+
+#Kies {
+    -fx-background-color: #3FE657;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+}
+
+#Annuleer {
+    -fx-background-color: #FF302B;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+}
+
+#txtVeld {
+    -fx-opacity: 0.9;
+}
+
+#txtVeld:focused {
+    -fx-opacity: 0.7;
+}
+
+
